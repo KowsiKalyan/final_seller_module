@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-anydpi-v21\\media_session_service_notification_ic_play.xml",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\drawable-anydpi-v21\\media_session_service_notification_ic_play.xml"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-anydpi-v21\\media_session_service_notification_ic_skip_to_next.xml",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\drawable-anydpi-v21\\media_session_service_notification_ic_skip_to_next.xml"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-anydpi-v21\\media_session_service_notification_ic_music_note.xml",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\drawable-anydpi-v21\\media_session_service_notification_ic_music_note.xml"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-anydpi-v21\\media_session_service_notification_ic_skip_to_previous.xml",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\drawable-anydpi-v21\\media_session_service_notification_ic_skip_to_previous.xml"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-anydpi-v21\\media_session_service_notification_ic_pause.xml",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\drawable-anydpi-v21\\media_session_service_notification_ic_pause.xml"
+    }
+]

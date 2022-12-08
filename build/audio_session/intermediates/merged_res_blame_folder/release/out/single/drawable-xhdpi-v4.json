@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\media_session_service_notification_ic_skip_to_previous.png",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\drawable-xhdpi-v4\\media_session_service_notification_ic_skip_to_previous.png"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\a3d23418ccb01f861e831d513975b6b8\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\a3d23418ccb01f861e831d513975b6b8\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\a3d23418ccb01f861e831d513975b6b8\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\media_session_service_notification_ic_pause.png",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\drawable-xhdpi-v4\\media_session_service_notification_ic_pause.png"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\a3d23418ccb01f861e831d513975b6b8\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\a3d23418ccb01f861e831d513975b6b8\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\media_session_service_notification_ic_play.png",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\drawable-xhdpi-v4\\media_session_service_notification_ic_play.png"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\media_session_service_notification_ic_skip_to_next.png",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\drawable-xhdpi-v4\\media_session_service_notification_ic_skip_to_next.png"
+    },
+    {
+        "merged": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\media_session_service_notification_ic_music_note.png",
+        "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\drawable-xhdpi-v4\\media_session_service_notification_ic_music_note.png"
+    }
+]

@@ -1,0 +1,664 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="cherriteam.sellermodule.multivendor"
+4    android:versionCode="3"
+5    android:versionName="1.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="32" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:4:5-67
+14-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-68
+15-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-65
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
+16-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-76
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->[:file_picker] E:\Cherri_projects\Seller Application v2.0.8\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+17-->[:file_picker] E:\Cherri_projects\Seller Application v2.0.8\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
+18
+19    <queries>
+19-->[:file_picker] E:\Cherri_projects\Seller Application v2.0.8\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-15:15
+20        <intent>
+20-->[:file_picker] E:\Cherri_projects\Seller Application v2.0.8\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:18
+21            <action android:name="android.intent.action.GET_CONTENT" />
+21-->[:file_picker] E:\Cherri_projects\Seller Application v2.0.8\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-72
+21-->[:file_picker] E:\Cherri_projects\Seller Application v2.0.8\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:21-69
+22
+23            <data android:mimeType="*/*" />
+23-->[:file_picker] E:\Cherri_projects\Seller Application v2.0.8\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-44
+23-->[:file_picker] E:\Cherri_projects\Seller Application v2.0.8\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-41
+24        </intent>
+25        <intent>
+25-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-10:18
+26            <action android:name="android.support.customtabs.action.CustomTabsService" />
+26-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-90
+26-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:9:21-87
+27        </intent>
+28        <intent>
+28-->[androidx.media2:media2-session:1.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\3ca35f6d0e0df1ab22561386a362dc1f\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:25:9-27:18
+29            <action android:name="android.media.browse.MediaBrowserService" />
+29-->[androidx.media2:media2-session:1.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\3ca35f6d0e0df1ab22561386a362dc1f\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:26:13-79
+29-->[androidx.media2:media2-session:1.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\3ca35f6d0e0df1ab22561386a362dc1f\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:26:21-76
+30        </intent>
+31        <intent>
+31-->[androidx.media2:media2-session:1.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\3ca35f6d0e0df1ab22561386a362dc1f\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:28:9-30:18
+32            <action android:name="androidx.media2.session.MediaSessionService" />
+32-->[androidx.media2:media2-session:1.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\3ca35f6d0e0df1ab22561386a362dc1f\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:29:13-82
+32-->[androidx.media2:media2-session:1.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\3ca35f6d0e0df1ab22561386a362dc1f\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:29:21-79
+33        </intent>
+34        <intent>
+34-->[androidx.media2:media2-session:1.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\3ca35f6d0e0df1ab22561386a362dc1f\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:31:9-33:18
+35            <action android:name="androidx.media2.session.MediaLibraryService" />
+35-->[androidx.media2:media2-session:1.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\3ca35f6d0e0df1ab22561386a362dc1f\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:32:13-82
+35-->[androidx.media2:media2-session:1.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\3ca35f6d0e0df1ab22561386a362dc1f\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:32:21-79
+36        </intent>
+37    </queries>
+38
+39    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+39-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+39-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
+40    <uses-permission android:name="android.permission.VIBRATE" />
+40-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
+40-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
+41    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+41-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+41-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
+42    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+42-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-79
+42-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-76
+43    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+43-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:25:5-77
+43-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:25:22-74
+44    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+44-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:28:5-82
+44-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:28:22-79
+45    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+45-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\7e10db5ae78ab4b3b2d1772873953875\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:25:5-79
+45-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\7e10db5ae78ab4b3b2d1772873953875\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:25:22-76
+46    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+46-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:26:5-110
+46-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:26:22-107
+47
+48    <application
+48-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:6:5-50:19
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.7.0] C:\Users\Cherri\.gradle\caches\transforms-3\7358ccbe6911b03bd6a60290031a557b\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+50        android:debuggable="true"
+51        android:icon="@mipmap/ic_launcher"
+51-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:7:9-43
+52        android:label="Seller Module - eShop"
+52-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:8:9-46
+53        android:usesCleartextTraffic="true" >
+53-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:9:9-44
+54        <activity
+54-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:11:10-38:20
+55            android:name="cherriteam.sellermodule.multivendor.MainActivity"
+55-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:12:13-41
+56            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+56-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:16:13-163
+57            android:exported="true"
+57-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:13:13-36
+58            android:hardwareAccelerated="true"
+58-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:17:13-47
+59            android:launchMode="singleTop"
+59-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:14:13-43
+60            android:theme="@style/LaunchTheme"
+60-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:15:13-47
+61            android:windowSoftInputMode="adjustResize" >
+61-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:18:13-55
+62
+63            <!--
+64                 Specifies an Android theme to apply to this Activity as soon as
+65                 the Android process has started. This theme is visible to the user
+66                 while the Flutter UI initializes. After that, this theme continues
+67                 to determine the Window background behind the Flutter UI.
+68            -->
+69            <meta-data
+69-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:23:13-25:66
+70                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+70-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:24:17-81
+71                android:resource="@drawable/launch_background" />
+71-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:25:17-63
+72            <meta-data
+72-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:26:17-28:61
+73                android:name="com.google.firebase.messaging.default_notification_icon"
+73-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:27:19-89
+74                android:resource="@drawable/ic_launcher" />
+74-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:28:18-58
+75              />
+76            <intent-filter>
+76-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:30:13-33:29
+77                <action android:name="android.intent.action.MAIN" />
+77-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:31:17-68
+77-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:31:25-66
+78
+79                <category android:name="android.intent.category.LAUNCHER" />
+79-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:32:17-76
+79-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:32:27-74
+80            </intent-filter>
+81            <intent-filter>
+81-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:34:13-37:29
+82                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+82-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:35:17-68
+82-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:35:25-66
+83
+84                <category android:name="android.intent.category.DEFAULT" />
+84-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:36:17-75
+84-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:36:27-73
+85            </intent-filter>
+86        </activity>
+87        <!--
+88             Don't delete the meta-data below.
+89             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+90        -->
+91        <meta-data
+91-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:41:9-43:55
+92            android:name="vn.hunghd.flutterdownloader.NOTIFICATION_ICON"
+92-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:42:13-73
+93            android:resource="@drawable/ic_launcher" />
+93-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:43:13-53
+94        <meta-data
+94-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:26:17-28:61
+95            android:name="com.google.firebase.messaging.default_notification_icon"
+95-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:27:19-89
+96            android:resource="@drawable/ic_launcher" />
+96-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:28:18-58
+97        <meta-data
+97-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:47:9-49:33
+98            android:name="flutterEmbedding"
+98-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:48:13-44
+99            android:value="2" />
+99-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:49:13-30
+100
+101        <service
+101-->[:firebase_auth] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+102            android:name="com.google.firebase.components.ComponentDiscoveryService"
+102-->[:firebase_auth] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+103            android:directBootAware="true"
+103-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\22167fc23556815b228aa623acba7125\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+104            android:exported="false" >
+104-->[com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\c2dbc0bd408f30591fc0da8c64888a89\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:10:13-37
+105            <meta-data
+105-->[:firebase_auth] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+106-->[:firebase_auth] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[:firebase_auth] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+108            <meta-data
+108-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-36:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+109-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:35:17-128
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:36:17-82
+111            <meta-data
+111-->[:firebase_core] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+112                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+112-->[:firebase_core] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[:firebase_core] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\c2dbc0bd408f30591fc0da8c64888a89\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:11:13-13:85
+115                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+115-->[com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\c2dbc0bd408f30591fc0da8c64888a89\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:12:17-126
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\c2dbc0bd408f30591fc0da8c64888a89\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:13:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\b7074e940ec92e3a5d0fda7674f054ae\transformed\jetified-firebase-common-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
+118                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+118-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\b7074e940ec92e3a5d0fda7674f054ae\transformed\jetified-firebase-common-ktx-20.2.0\AndroidManifest.xml:15:17-113
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\b7074e940ec92e3a5d0fda7674f054ae\transformed\jetified-firebase-common-ktx-20.2.0\AndroidManifest.xml:16:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:55:13-57:85
+121                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+121-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:56:17-119
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:57:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Cherri\.gradle\caches\transforms-3\e48e0518461fc4b51dabef07d7ac379d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+124                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+124-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Cherri\.gradle\caches\transforms-3\e48e0518461fc4b51dabef07d7ac379d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Cherri\.gradle\caches\transforms-3\e48e0518461fc4b51dabef07d7ac379d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+127                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+127-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+129            <meta-data
+129-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\7e10db5ae78ab4b3b2d1772873953875\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
+130                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+130-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\7e10db5ae78ab4b3b2d1772873953875\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\7e10db5ae78ab4b3b2d1772873953875\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
+132            <meta-data
+132-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\f86d078c333c507a600cf96ec6aeb3e4\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
+133                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+133-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\f86d078c333c507a600cf96ec6aeb3e4\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\f86d078c333c507a600cf96ec6aeb3e4\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
+135        </service>
+136        <service
+136-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-15:72
+137            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+137-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-107
+138            android:exported="false"
+138-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+139            android:permission="android.permission.BIND_JOB_SERVICE" />
+139-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-69
+140        <service
+140-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-22:19
+141            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+141-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-97
+142            android:exported="false" >
+142-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+143            <intent-filter>
+143-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
+144                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+144-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
+144-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
+145            </intent-filter>
+146        </service>
+147
+148        <receiver
+148-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-31:20
+149            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+149-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-98
+150            android:exported="true"
+150-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-36
+151            android:permission="com.google.android.c2dm.permission.SEND" >
+151-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-73
+152            <intent-filter>
+152-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
+153                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+153-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
+153-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
+154            </intent-filter>
+155        </receiver>
+156
+157        <provider
+157-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-43:38
+158            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+158-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-102
+159            android:authorities="cherriteam.sellermodule.multivendor.flutterfirebasemessaginginitprovider"
+159-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-88
+160            android:exported="false"
+160-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-37
+161            android:initOrder="99" />
+161-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-35
+162        <provider
+162-->[:image_picker_android] E:\Cherri_projects\Seller Application v2.0.8\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+163            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+163-->[:image_picker_android] E:\Cherri_projects\Seller Application v2.0.8\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+164            android:authorities="cherriteam.sellermodule.multivendor.flutter.image_provider"
+164-->[:image_picker_android] E:\Cherri_projects\Seller Application v2.0.8\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+165            android:exported="false"
+165-->[:image_picker_android] E:\Cherri_projects\Seller Application v2.0.8\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+166            android:grantUriPermissions="true" >
+166-->[:image_picker_android] E:\Cherri_projects\Seller Application v2.0.8\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+167            <meta-data
+167-->[:image_picker_android] E:\Cherri_projects\Seller Application v2.0.8\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+168                android:name="android.support.FILE_PROVIDER_PATHS"
+168-->[:image_picker_android] E:\Cherri_projects\Seller Application v2.0.8\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+169                android:resource="@xml/flutter_image_picker_file_paths" />
+169-->[:image_picker_android] E:\Cherri_projects\Seller Application v2.0.8\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+170        </provider>
+171
+172        <receiver
+172-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-15:40
+173            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+173-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-97
+174            android:exported="false" />
+174-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+175        <receiver
+175-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-25:20
+176            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+176-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-101
+177            android:exported="false" >
+177-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+178            <intent-filter>
+178-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-24:29
+179                <action android:name="android.intent.action.BOOT_COMPLETED" />
+179-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-79
+179-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-76
+180                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+180-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:17-84
+180-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:25-81
+181                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+181-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:17-82
+181-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:25-79
+182                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+182-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:17-82
+182-->[:flutter_local_notifications] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:25-79
+183            </intent-filter>
+184        </receiver>
+185
+186        <activity
+186-->[:url_launcher_android] E:\Cherri_projects\Seller Application v2.0.8\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+187            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+187-->[:url_launcher_android] E:\Cherri_projects\Seller Application v2.0.8\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+188            android:exported="false"
+188-->[:url_launcher_android] E:\Cherri_projects\Seller Application v2.0.8\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+189            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+189-->[:url_launcher_android] E:\Cherri_projects\Seller Application v2.0.8\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+190        <activity
+190-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-18:47
+191            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+191-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-104
+192            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+192-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-137
+193            android:exported="true"
+193-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-36
+194            android:theme="@style/AppTheme" />
+194-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-44
+195        <activity
+195-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-22:55
+196            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+196-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-112
+197            android:exported="true"
+197-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-36
+198            android:theme="@style/ThemeTransparent" />
+198-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-52
+199        <activity
+199-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-26:55
+200            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+200-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-106
+201            android:exported="true"
+201-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-36
+202            android:theme="@style/ThemeTransparent" />
+202-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-52
+203        <activity
+203-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-31:55
+204            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+204-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-126
+205            android:exported="true"
+205-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-36
+206            android:launchMode="singleInstance"
+206-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-48
+207            android:theme="@style/ThemeTransparent" />
+207-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-52
+208        <activity
+208-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:32:9-36:55
+209            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+209-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-120
+210            android:exported="true"
+210-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-36
+211            android:launchMode="singleInstance"
+211-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:35:13-48
+212            android:theme="@style/ThemeTransparent" />
+212-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:36:13-52
+213
+214        <receiver
+214-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:38:9-41:40
+215            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+215-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-111
+216            android:enabled="true"
+216-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-35
+217            android:exported="false" />
+217-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-37
+218
+219        <meta-data
+219-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:43:9-45:36
+220            android:name="io.flutter.embedded_views_preview"
+220-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-61
+221            android:value="true" />
+221-->[:flutter_inappwebview] E:\Cherri_projects\Seller Application v2.0.8\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:45:13-33
+222
+223        <uses-library
+223-->[androidx.window:window:1.0.0-beta04] C:\Users\Cherri\.gradle\caches\transforms-3\d8af25e13d506f3d43a7abe8ad1650a1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+224            android:name="androidx.window.extensions"
+224-->[androidx.window:window:1.0.0-beta04] C:\Users\Cherri\.gradle\caches\transforms-3\d8af25e13d506f3d43a7abe8ad1650a1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+225            android:required="false" />
+225-->[androidx.window:window:1.0.0-beta04] C:\Users\Cherri\.gradle\caches\transforms-3\d8af25e13d506f3d43a7abe8ad1650a1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+226        <uses-library
+226-->[androidx.window:window:1.0.0-beta04] C:\Users\Cherri\.gradle\caches\transforms-3\d8af25e13d506f3d43a7abe8ad1650a1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+227            android:name="androidx.window.sidecar"
+227-->[androidx.window:window:1.0.0-beta04] C:\Users\Cherri\.gradle\caches\transforms-3\d8af25e13d506f3d43a7abe8ad1650a1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+228            android:required="false" />
+228-->[androidx.window:window:1.0.0-beta04] C:\Users\Cherri\.gradle\caches\transforms-3\d8af25e13d506f3d43a7abe8ad1650a1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+229
+230        <receiver
+230-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:31:9-38:20
+231            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+231-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:32:13-78
+232            android:exported="true"
+232-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:33:13-36
+233            android:permission="com.google.android.c2dm.permission.SEND" >
+233-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:34:13-73
+234            <intent-filter>
+234-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
+235                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+235-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
+235-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
+236            </intent-filter>
+237        </receiver>
+238        <!--
+239             FirebaseMessagingService performs security checks at runtime,
+240             but set to not exported to explicitly avoid allowing another app to call it.
+241        -->
+242        <service
+242-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:44:9-51:19
+243            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+243-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:45:13-82
+244            android:directBootAware="true"
+244-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:46:13-43
+245            android:exported="false" >
+245-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\d94d6856ac7f21eaf1e7276b472ba06f\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:47:13-37
+246            <intent-filter android:priority="-500" >
+246-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
+247                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+247-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
+247-->[:firebase_messaging] E:\Cherri_projects\Seller Application v2.0.8\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
+248            </intent-filter>
+249        </service>
+250        <service
+250-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\f65b79076a984488bd41083d4915bc11\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+251            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+251-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\f65b79076a984488bd41083d4915bc11\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+252            android:exported="false" >
+252-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\f65b79076a984488bd41083d4915bc11\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+253            <meta-data
+253-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\f65b79076a984488bd41083d4915bc11\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+254                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+254-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\f65b79076a984488bd41083d4915bc11\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+255                android:value="cct" />
+255-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\f65b79076a984488bd41083d4915bc11\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+256        </service>
+257        <service
+257-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\206f77f8809410211d1139ac0d0668b6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+258            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+258-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\206f77f8809410211d1139ac0d0668b6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+259            android:exported="false"
+259-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\206f77f8809410211d1139ac0d0668b6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+260            android:permission="android.permission.BIND_JOB_SERVICE" >
+260-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\206f77f8809410211d1139ac0d0668b6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+261        </service>
+262
+263        <receiver
+263-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\206f77f8809410211d1139ac0d0668b6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+264            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+264-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\206f77f8809410211d1139ac0d0668b6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+265            android:exported="false" />
+265-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Cherri\.gradle\caches\transforms-3\206f77f8809410211d1139ac0d0668b6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+266
+267        <activity
+267-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+268            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+268-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+269            android:excludeFromRecents="true"
+269-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+270            android:exported="true"
+270-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+271            android:launchMode="singleTask"
+271-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+272            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+272-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+273            <intent-filter>
+273-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+274                <action android:name="android.intent.action.VIEW" />
+274-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+274-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+275
+276                <category android:name="android.intent.category.DEFAULT" />
+276-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:36:17-75
+276-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:36:27-73
+277                <category android:name="android.intent.category.BROWSABLE" />
+277-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+277-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+278
+279                <data
+279-->[:file_picker] E:\Cherri_projects\Seller Application v2.0.8\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-44
+280                    android:host="firebase.auth"
+281                    android:path="/"
+282                    android:scheme="genericidp" />
+283            </intent-filter>
+284        </activity>
+285        <activity
+285-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+286            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+286-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+287            android:excludeFromRecents="true"
+287-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+288            android:exported="true"
+288-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+289            android:launchMode="singleTask"
+289-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+290            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+290-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+291            <intent-filter>
+291-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+292                <action android:name="android.intent.action.VIEW" />
+292-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+292-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+293
+294                <category android:name="android.intent.category.DEFAULT" />
+294-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:36:17-75
+294-->E:\Cherri_projects\Seller Application v2.0.8\android\app\src\main\AndroidManifest.xml:36:27-73
+295                <category android:name="android.intent.category.BROWSABLE" />
+295-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+295-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\3004c554f5b5dd3345bbdc58022e43a1\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+296
+297                <data
+297-->[:file_picker] E:\Cherri_projects\Seller Application v2.0.8\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-44
+298                    android:host="firebase.auth"
+299                    android:path="/"
+300                    android:scheme="recaptcha" />
+301            </intent-filter>
+302        </activity>
+303
+304        <provider
+304-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\22167fc23556815b228aa623acba7125\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+305            android:name="com.google.firebase.provider.FirebaseInitProvider"
+305-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\22167fc23556815b228aa623acba7125\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+306            android:authorities="cherriteam.sellermodule.multivendor.firebaseinitprovider"
+306-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\22167fc23556815b228aa623acba7125\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+307            android:directBootAware="true"
+307-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\22167fc23556815b228aa623acba7125\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+308            android:exported="false"
+308-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\22167fc23556815b228aa623acba7125\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+309            android:initOrder="100" />
+309-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\22167fc23556815b228aa623acba7125\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+310
+311        <activity
+311-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\664fa24e440abed7af7f6e6a71f05ee6\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:23:9-27:75
+312            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+312-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\664fa24e440abed7af7f6e6a71f05ee6\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:24:13-93
+313            android:excludeFromRecents="true"
+313-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\664fa24e440abed7af7f6e6a71f05ee6\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:25:13-46
+314            android:exported="false"
+314-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\664fa24e440abed7af7f6e6a71f05ee6\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:26:13-37
+315            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+315-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\664fa24e440abed7af7f6e6a71f05ee6\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:27:13-72
+316        <!--
+317            Service handling Google Sign-In user revocation. For apps that do not integrate with
+318            Google Sign-In, this service will never be started.
+319        -->
+320        <service
+320-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\664fa24e440abed7af7f6e6a71f05ee6\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:33:9-37:51
+321            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+321-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\664fa24e440abed7af7f6e6a71f05ee6\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:34:13-89
+322            android:exported="true"
+322-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\664fa24e440abed7af7f6e6a71f05ee6\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:35:13-36
+323            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+323-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\664fa24e440abed7af7f6e6a71f05ee6\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:36:13-107
+324            android:visibleToInstantApps="true" />
+324-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\664fa24e440abed7af7f6e6a71f05ee6\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:37:13-48
+325
+326        <receiver
+326-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
+327            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+327-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
+328            android:enabled="true"
+328-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
+329            android:exported="false" >
+329-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
+330        </receiver>
+331
+332        <service
+332-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
+333            android:name="com.google.android.gms.measurement.AppMeasurementService"
+333-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
+334            android:enabled="true"
+334-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
+335            android:exported="false" />
+335-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
+336        <service
+336-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
+337            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+337-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
+338            android:enabled="true"
+338-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
+339            android:exported="false"
+339-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
+340            android:permission="android.permission.BIND_JOB_SERVICE" />
+340-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Cherri\.gradle\caches\transforms-3\0bf599bc3950f60cd12d98a5aad7bdd9\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
+341
+342        <activity
+342-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Cherri\.gradle\caches\transforms-3\1df131529dd65727b1cb259de135f984\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+343            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+343-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Cherri\.gradle\caches\transforms-3\1df131529dd65727b1cb259de135f984\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+344            android:exported="false"
+344-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Cherri\.gradle\caches\transforms-3\1df131529dd65727b1cb259de135f984\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+345            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+345-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Cherri\.gradle\caches\transforms-3\1df131529dd65727b1cb259de135f984\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+346
+347        <meta-data
+347-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\5250e1942e811ab6146a6eb0c8217314\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+348            android:name="com.google.android.gms.version"
+348-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\5250e1942e811ab6146a6eb0c8217314\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+349            android:value="@integer/google_play_services_version" />
+349-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Cherri\.gradle\caches\transforms-3\5250e1942e811ab6146a6eb0c8217314\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+350
+351        <provider
+351-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Cherri\.gradle\caches\transforms-3\3f9af3a57675678eb7bf811d9c777c82\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+352            android:name="androidx.startup.InitializationProvider"
+352-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Cherri\.gradle\caches\transforms-3\3f9af3a57675678eb7bf811d9c777c82\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+353            android:authorities="cherriteam.sellermodule.multivendor.androidx-startup"
+353-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Cherri\.gradle\caches\transforms-3\3f9af3a57675678eb7bf811d9c777c82\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+354            android:exported="false" >
+354-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Cherri\.gradle\caches\transforms-3\3f9af3a57675678eb7bf811d9c777c82\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+355            <meta-data
+355-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Cherri\.gradle\caches\transforms-3\3f9af3a57675678eb7bf811d9c777c82\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+356                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+356-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Cherri\.gradle\caches\transforms-3\3f9af3a57675678eb7bf811d9c777c82\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+357                android:value="androidx.startup" />
+357-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Cherri\.gradle\caches\transforms-3\3f9af3a57675678eb7bf811d9c777c82\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+358            <meta-data
+358-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Cherri\.gradle\caches\transforms-3\2b61bbc1aa3efa66f14af8e5a4ffcc35\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+359                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+359-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Cherri\.gradle\caches\transforms-3\2b61bbc1aa3efa66f14af8e5a4ffcc35\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+360                android:value="androidx.startup" />
+360-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Cherri\.gradle\caches\transforms-3\2b61bbc1aa3efa66f14af8e5a4ffcc35\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+361        </provider>
+362    </application>
+363
+364</manifest>

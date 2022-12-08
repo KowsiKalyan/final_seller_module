@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\url_launcher_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\a3d23418ccb01f861e831d513975b6b8\\transformed\\core-1.6.0\\res\\values-sk\\values-sk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\url_launcher_android\\intermediates\\res\\merged\\debug\\values-sk\\values-sk.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\a3d23418ccb01f861e831d513975b6b8\\transformed\\core-1.6.0\\res\\values-sk\\values-sk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

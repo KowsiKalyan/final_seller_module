@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\res\\merged\\release\\values-es-rUS\\values-es-rUS.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\a3d23418ccb01f861e831d513975b6b8\\transformed\\core-1.6.0\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "620",
+                        "endColumns": "100",
+                        "endOffsets": "716"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,163,261,361,489",
+                        "endColumns": "107,97,99,127,130",
+                        "endOffsets": "158,256,356,484,615"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "E:\\Cherri_projects\\Seller Application v2.0.8\\build\\audio_session\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-es-rUS\\values-es-rUS.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\a3d23418ccb01f861e831d513975b6b8\\transformed\\core-1.6.0\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "620",
+                        "endColumns": "100",
+                        "endOffsets": "716"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Cherri\\.gradle\\caches\\transforms-3\\3ca35f6d0e0df1ab22561386a362dc1f\\transformed\\jetified-media2-session-1.2.0\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,163,261,361,489",
+                        "endColumns": "107,97,99,127,130",
+                        "endOffsets": "158,256,356,484,615"
+                    }
+                }
+            ]
+        }
+    ]
+}
