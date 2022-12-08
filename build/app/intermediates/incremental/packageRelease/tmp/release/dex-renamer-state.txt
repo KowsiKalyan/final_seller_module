@@ -1,4 +1,0 @@
-#Wed Dec 07 18:54:50 IST 2022
-base.0=E\:\\Cherri_projects\\Seller Application v2.0.8\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
